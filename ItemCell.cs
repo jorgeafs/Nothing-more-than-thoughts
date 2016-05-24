@@ -12,14 +12,14 @@ namespace wherever
 				HorizontalOptions = LayoutOptions.StartAndExpand
 			};
 
-			label.SetBinding (Label.TextProperty, "Name");
+			label.SetBinding (Label.TextProperty, "Nombre");
 
 			var tick = new Image {
 				Source = FileImageSource.FromFile ("check.png"),
 				HorizontalOptions = LayoutOptions.End
 			};
 
-			tick.SetBinding (Image.IsVisibleProperty, "Done");
+			tick.SetBinding (Image.IsVisibleProperty, "Hecho");
 
 			var layout = new StackLayout {
 				Padding = new Thickness (20, 0, 20, 0),
